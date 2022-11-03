@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina em construção !</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background-image: url("imagem.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #fechar {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            font-size: 32px;
+            cursor: pointer;
+            border: none;
+            background-color: white;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+        }
+
+        #fechar:hover {
+            color: #b10000;
+        }
+
+        #fechar:active {
+            transform: scale(0.95);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="fechar">
+            Voltar
+        </p>
+    </div>
+
+<script>
+
+    document.querySelector('#fechar').onclick = () => {
+        window.close()
+    }
+
+</script>
+</body>
+</html>
